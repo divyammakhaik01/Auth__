@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+
+    {% block navbar %}
+    <link rel="stylesheet" href="../static/index.css">
+
+    <div>
+    <form action="/register" method="post">
+
+        <h3>Name</h3>
+        <input type="text" name="name" id="name">
+        <br>
+        <h3>Email</h3>
+        <input type="email" name="email" id="email">
+        <br>
+        <h3>Mobile Number</h3>
+        <input type="number" name="mobile" id="mobile">
+        <br>
+        <h3>Password</h3>
+        <input type="password" name="password" id="password">
+
+        <input type="submit" value="submit">
+        
+    </form>
+</div>
+{% endblock navbar%}

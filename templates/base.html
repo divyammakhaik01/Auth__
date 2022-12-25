@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <span>
+       {% if  session.get('name') %}
+    <h3>
+       <a class="logout" href="http://127.0.0.1:5000/logout">Logout</a>
+    </h3>
+    {% else %} 
+      <h3>
+      <a class="login" href="http://127.0.0.1:5000/login">Login</a>
+      <a class="register" href="http://127.0.0.1:5000/register">Register</a>
+    </h3>
+       {% endif %}
+
+
+        {% block navbar %}
+
+        {% endblock navbar %}
+
+    </span>
+  </body>
+</html>

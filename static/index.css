@@ -1,0 +1,14 @@
+.name{
+    color: crimson ;
+    padding-left: 10px;
+ }
+ .login{
+    color: green;
+    padding-right: 10px;
+ }
+ .logout{
+    color: red;
+ }
+ .register{
+    color: green
+ }
